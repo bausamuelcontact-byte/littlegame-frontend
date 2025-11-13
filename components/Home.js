@@ -10,7 +10,9 @@ function Home() {
   async function displayPlayer() {
     const listPlayer = [];
     for (let i = 0; i < 3; i++) {
-      const response = await fetch("http://localhost:3000/players");
+      const response = await fetch(
+        "https://littlegame-backend.vercel.app/players"
+      );
       const data = await response.json();
       listPlayer.push(data);
       console.log(data);
@@ -19,7 +21,7 @@ function Home() {
   }
 
   useEffect(() => {
-    fetch("https://littlegame-backend.vercel.app")
+    fetch("https://littlegame-backend.vercel.app/boss")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
