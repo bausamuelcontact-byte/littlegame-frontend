@@ -1,0 +1,20 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boss {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(0, 37, 86);
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-around;
+  align-items: center;
+}
