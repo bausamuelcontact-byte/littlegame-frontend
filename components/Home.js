@@ -19,7 +19,7 @@ function Home() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:3000/boss")
+    fetch("https://littlegame-backend.vercel.app")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
